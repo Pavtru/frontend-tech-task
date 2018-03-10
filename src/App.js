@@ -10,7 +10,20 @@ constructor(){
    this.state = {gethdr: "Welcome to React"};
 }
 handleclick(){
-  this.setState({color: "blue"});
+  var col1 = "black";
+  var col2 = "blue";
+ if (this.state.color != "black"){
+   this.setState({color: col1});
+ }
+ else
+ {
+    this.setState({color: col2});
+ }
+ 
+  
+  
+ 
+ 
 }
   render() {
      
