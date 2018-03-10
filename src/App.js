@@ -5,15 +5,16 @@ import './App.css';
 
 class App extends Component {
   gethdr(){
-    return "Welcome to React"
-  }
+    const hdr ="Welcome to React";
+    
+    return hdr  }
   render() {
      
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title"  >{this.gethdr()}</h1>
+          <h1 className="App-title" onclick={this.gethdr} >{this.gethdr()}</h1>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
