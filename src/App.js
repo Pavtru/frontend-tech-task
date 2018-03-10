@@ -9,7 +9,7 @@ constructor(){
 
    this.state = {gethdr: "Welcome to React"};
 }
-handleclick(gethdr){
+handleclick(){
   this.setState({color: "blue"});
 }
   render() {
@@ -19,7 +19,7 @@ handleclick(gethdr){
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title" style={color:"black"} onClick={this.handleclick.bind(this)}>{this.state.gethdr}</h1>
+          <h1 className="App-title" style={{color: this.state.color}} onClick={this.handleclick.bind(this)}>{this.state.gethdr}</h1>
           
         </header>
         <input />
