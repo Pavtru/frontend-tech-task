@@ -16,7 +16,7 @@ handleclick(){
   var col2 = "blue";
   fetch("http://www.colr.org/json/color/random")
   .then((resp)=>{ return resp.json() })
-  .then((json)=>{ console.log(json) })
+  .then((json)=>{ console.log(json.colors) })
  if (this.state.color !== "black"){
    this.setState({color: col1});
  }
