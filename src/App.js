@@ -37,8 +37,7 @@ handleclick(){
 }
 
 updatfrominput(e){
-  this.setState({[e.target.name]: e.target.value})
-  console.log(e.target.value);
+  
   this.setState({resp: e.target.value})
 }
 
@@ -54,7 +53,7 @@ updatfrominput(e){
           <h1 className="App-title" style={{color: this.state.color}} onClick={this.handleclick.bind(this)}>{this.state.resp} </h1>
          
         </header>
-        <input onChange={(e)=> this.updatfrominput(e)} value={this.state.value} name="input1" />
+        <input onChange={(e)=> this.updatfrominput(e)} value={this.state.value}  />
         
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
