@@ -39,6 +39,7 @@ handleclick(){
 updatfrominput(e){
   this.setState({[e.target.name]: e.target.value})
   console.log(e.target.value);
+  this.setState({resp: e.target.value})
 }
 
 
